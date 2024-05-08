@@ -1,0 +1,29 @@
+public class calculator{
+    public firstNumber( get;set; )
+    public secondNumber( get;set; )
+    public result( get; set; )
+    public errorMessage( get;set; )
+
+    public void division(){
+        if secondNumber==0{
+            result = null;
+            errorMessage = "Can't Divide by zero";
+        }
+        else{
+            result = firstNumber/secondNumber;
+            errorMessage = null;
+        }
+    }
+
+    public void addition(){
+        result = firstNumber+ secondNumber;
+    }
+
+    public void subtraction(){
+        result = firstNumber - secondNumber;
+    }
+
+    public void multiplication(){
+        result = firstNumber * secondNumber;
+    }
+}
